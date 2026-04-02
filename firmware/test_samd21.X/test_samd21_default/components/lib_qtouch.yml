@@ -1,0 +1,284 @@
+configVersion: 1.0.0
+componentName: lib_qtouch
+coreVersion: 5.8.4
+device: ATSAMD21J18A
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: lib_qtouch
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: touch
+  type: package
+  version: v3.20.1
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments:
+    children:
+    - children:
+      - attributes:
+          id: Touch_timer
+        children:
+        - children:
+          - attributes:
+              id: targetComponentID
+            children:
+            - type: Value
+              value: rtc
+            type: String
+          - attributes:
+              id: targetAttachmentID
+            children:
+            - type: Value
+              value: RTC_TMR
+            type: String
+          type: Attributes
+        type: DirectDependency
+      - attributes:
+          id: lib_acquire
+        children:
+        - children:
+          - attributes:
+              id: targetComponentID
+            children:
+            - type: Value
+              value: ptc
+            type: String
+          - attributes:
+              id: targetAttachmentID
+            children:
+            - type: Value
+              value: ptc_Acq_Engine
+            type: String
+          type: Attributes
+        type: DirectDependency
+      type: Attachments
+    type: lib_qtouch
+  elementPosition:
+    attributes:
+      id: __ROOTVIEW
+    children:
+    - children:
+      - attributes:
+          id: lib_qtouch
+          x: '413'
+          y: '121'
+        type: ElementPosition
+      type: ElementPositions
+    type: ComponentGraph
+  symbols:
+    DEF_NOD_PTC_PRESCALER0:
+      attributes:
+        id: DEF_NOD_PTC_PRESCALER0
+      children:
+      - children:
+        - attributes:
+            value: '0'
+          type: User
+        type: Values
+      type: KeyValueSet
+    DEF_NOD_PTC_PRESCALER1:
+      attributes:
+        id: DEF_NOD_PTC_PRESCALER1
+      children:
+      - children:
+        - attributes:
+            value: '0'
+          type: User
+        type: Values
+      type: KeyValueSet
+    ENABLE_DATA_STREAMER:
+      attributes:
+        id: ENABLE_DATA_STREAMER
+      children:
+      - children:
+        - attributes:
+            value: 'false'
+          type: User
+        type: Values
+      type: Boolean
+    ENABLE_SCROLLER:
+      attributes:
+        id: ENABLE_SCROLLER
+      children:
+      - children:
+        - attributes:
+            id: lib_qtouch
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    ENABLE_TOUCH_TUNE_WITH_PLUGIN:
+      attributes:
+        id: ENABLE_TOUCH_TUNE_WITH_PLUGIN
+      children:
+      - children:
+        - attributes:
+            value: 'false'
+          type: User
+        type: Values
+      type: Boolean
+    PTC_CLOCK_FREQ:
+      attributes:
+        id: PTC_CLOCK_FREQ
+      children:
+      - children:
+        - attributes:
+            id: lib_qtouch
+            value: GCLK_ID_34_FREQ:sync
+          type: Dynamic
+        type: Values
+      type: String
+    SELFCAP-INPUT_0:
+      attributes:
+        id: SELFCAP-INPUT_0
+      children:
+      - children:
+        - attributes:
+            value: '4'
+          type: User
+        type: Values
+      type: KeyValueSet
+    SELFCAP-INPUT_1:
+      attributes:
+        id: SELFCAP-INPUT_1
+      children:
+      - children:
+        - attributes:
+            value: '5'
+          type: User
+        type: Values
+      type: KeyValueSet
+    TOUCH_CHAN_ENABLE_CNT:
+      attributes:
+        id: TOUCH_CHAN_ENABLE_CNT
+      children:
+      - children:
+        - attributes:
+            value: '2'
+          type: User
+        type: Values
+      type: Integer
+    TOUCH_ENABLE_CH_0:
+      attributes:
+        id: TOUCH_ENABLE_CH_0
+      children:
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    TOUCH_ENABLE_CH_1:
+      attributes:
+        id: TOUCH_ENABLE_CH_1
+      children:
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    TOUCH_ENABLE_KEY_0:
+      attributes:
+        id: TOUCH_ENABLE_KEY_0
+      children:
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    TOUCH_ENABLE_KEY_1:
+      attributes:
+        id: TOUCH_ENABLE_KEY_1
+      children:
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    TOUCH_KEY_ENABLE_CNT:
+      attributes:
+        id: TOUCH_KEY_ENABLE_CNT
+      children:
+      - children:
+        - attributes:
+            value: '2'
+          type: User
+        type: Values
+      type: Integer
+    TOUCH_LOADED:
+      attributes:
+        id: TOUCH_LOADED
+      children:
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    TOUCH_PRE_GENERATE:
+      attributes:
+        id: TOUCH_PRE_GENERATE
+      children:
+      - children:
+        - attributes:
+            id: lib_qtouch
+            value: 'true'
+          type: Dynamic
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    TOUCH_SCRIPT_EVENT:
+      attributes:
+        id: TOUCH_SCRIPT_EVENT
+      children:
+      - children:
+        - attributes:
+            id: lib_qtouch
+            value: ptcclock
+          type: Dynamic
+        type: Values
+      type: String
+    TOUCH_TIMER_INSTANCE:
+      attributes:
+        id: TOUCH_TIMER_INSTANCE
+      children:
+      - children:
+        - attributes:
+            id: lib_qtouch
+            value: RTC
+          type: Dynamic
+        type: Values
+      type: String
+    TOUCH_WARNING:
+      attributes:
+        id: TOUCH_WARNING
+      children:
+      - children:
+        - attributes:
+            id: description
+          children:
+          - type: Value
+            value: Open touch configurator and save project
+          type: String
+        - attributes:
+            id: label
+          children:
+          - type: Value
+            value: '!!!Warning PTC clock out of sync'
+          type: String
+        - attributes:
+            id: visible
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      type: Menu
+  userData: {}
