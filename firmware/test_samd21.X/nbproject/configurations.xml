@@ -282,8 +282,8 @@
             <linkerLibFileItem>../src/config/default/touch/lib/qtm_acq_samd21_0x0024.X.a</linkerLibFileItem>
             <linkerLibFileItem>../src/config/default/touch/lib/qtm_touch_key_cm0p_0x0002.X.a</linkerLibFileItem>
             <linkerLibFileItem>../src/config/default/touch/lib/qtm_freq_hop_cm0p_0x0006.X.a</linkerLibFileItem>
-            <linkerLibFileItem>../src/sensiml/lib/libsensiml.a</linkerLibFileItem>
             <linkerLibFileItem>../src/config/default/touch/lib/qtm_freq_hop_auto_cm0p_0x0004.X.a</linkerLibFileItem>
+            <linkerLibFileItem>../src/sensiml/lib/libsensiml.a</linkerLibFileItem>
           </linkerLibItems>
         </linkerTool>
         <archiverTool>
@@ -333,6 +333,7 @@
       <C32>
         <property key="additional-warnings" value="true"/>
         <property key="addresss-attribute-use" value="false"/>
+        <property key="appendMe" value=""/>
         <property key="enable-app-io" value="false"/>
         <property key="enable-omit-frame-pointer" value="false"/>
         <property key="enable-symbols" value="true"/>
@@ -389,6 +390,7 @@
         <property key="additional-options-use-response-files" value="false"/>
         <property key="additional-options-write-sla" value="false"/>
         <property key="allocate-dinit" value="false"/>
+        <property key="appendMe" value=""/>
         <property key="code-dinit" value="false"/>
         <property key="ebase-addr" value=""/>
         <property key="enable-check-sections" value="false"/>
@@ -405,7 +407,7 @@
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-cross-reference-file" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
-        <property key="heap-size" value="0"/>
+        <property key="heap-size" value="512"/>
         <property key="input-libraries" value=""/>
         <property key="kseg-length" value=""/>
         <property key="kseg-origin" value=""/>
@@ -428,6 +430,7 @@
       <C32CPP>
         <property key="additional-warnings" value="false"/>
         <property key="addresss-attribute-use" value="false"/>
+        <property key="appendMe" value=""/>
         <property key="check-new" value="false"/>
         <property key="eh-specs" value="true"/>
         <property key="enable-app-io" value="false"/>

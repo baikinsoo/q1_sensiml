@@ -1,5 +1,5 @@
 /*******************************************************************************
-  Touch Library v3.20.1 Release
+  Touch Library v3.14.0 Release
 
   Company:
     Microchip Technology Inc.
@@ -17,7 +17,7 @@
 *******************************************************************************/
 
 /*******************************************************************************
-Copyright (C) [2026], Microchip Technology Inc., and its subsidiaries. All rights reserved.
+Copyright (C) [2023], Microchip Technology Inc., and its subsidiaries. All rights reserved.
 
 The software and documentation is provided by microchip and its contributors
 "as is" and any express, implied or statutory warranties, including, but not
@@ -48,7 +48,6 @@ Microchip or any third party.
 #include "../peripheral/rtc/plib_rtc.h"
 #include "../interrupts.h"
 #include "touch/touch.h"
-
 
 /*----------------------------------------------------------------------------
  *   prototypes
@@ -413,6 +412,6 @@ Notes  : none
 ============================================================================*/
 void PTC_Handler(void)
 {
-qtm_ptc_clear_interrupt();
+	qtm_ptc_clear_interrupt();
 	qtm_samd21_ptc_handler_eoc();
 }

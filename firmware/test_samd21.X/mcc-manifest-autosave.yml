@@ -2,12 +2,12 @@
 
 manifest_file_version: 1.0.0
 project: test_samd21
-creation_date: 2026-04-01T19:57:19.273+09:00[Asia/Seoul]
+creation_date: 2026-04-03T13:19:13.020+09:00[Asia/Seoul]
 operating_system: Windows 10
 mcc_mode: IDE
 mcc_mode_version: v6.20
 device_name: ATSAMD21J18A
-compiler: XC32 5.00
+compiler: XC32 4.60
 mcc_version: 5.5.1
 mcc_core_version: 5.7.1
 content_manager_version: 5.0.1

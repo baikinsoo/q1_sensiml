@@ -20,7 +20,7 @@
 
 // DOM-IGNORE-BEGIN
 /*******************************************************************************
-* Copyright (C) 2025 Microchip Technology Inc. and its subsidiaries.
+* Copyright (C) 2018 Microchip Technology Inc. and its subsidiaries.
 *
 * Subject to your compliance with these terms, you may use Microchip software
 * and any derivatives exclusively with Microchip products. It is your
@@ -60,7 +60,7 @@
 // *****************************************************************************
 // *****************************************************************************
 
-/* MISRA C-2023 Rule 8.6 deviated below. Deviation record ID -  H3_MISRAC_2023_R_8_6_DR_1 */
+/* MISRA C-2012 Rule 8.6 deviated below. Deviation record ID -  H3_MISRAC_2012_R_8_6_DR_1 */
 extern uint32_t _stack;
 extern const H3DeviceVectors exception_table;
 
@@ -74,47 +74,44 @@ void __attribute__((optimize("-O1"), long_call, noreturn, used))Dummy_Handler(vo
     }
 }
 
-/* MISRAC 2023 deviation block start */
-/* MISRA C-2023 Rule 8.6 deviated 28 times.  Deviation record ID -  H3_MISRAC_2023_R_8_6_DR_1 */
+/* MISRAC 2012 deviation block start */
+/* MISRA C-2012 Rule 8.6 deviated 28 times.  Deviation record ID -  H3_MISRAC_2012_R_8_6_DR_1 */
 /* Device vectors list dummy definition*/
-extern void SVCall_Handler             ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
-extern void PendSV_Handler             ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
-extern void SysTick_Handler            ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
-extern void PM_Handler                 ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
-extern void SYSCTRL_Handler            ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
-extern void WDT_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
-extern void EIC_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
-extern void NVMCTRL_Handler            ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
-extern void DMAC_Handler               ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
-extern void USB_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
-extern void EVSYS_Handler              ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
-extern void SERCOM0_Handler            ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
-extern void SERCOM1_Handler            ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
-extern void SERCOM2_Handler            ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
-extern void SERCOM4_Handler            ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
-extern void SERCOM5_Handler            ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
-extern void TCC0_Handler               ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
-extern void TCC1_Handler               ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
-extern void TCC2_Handler               ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
-extern void TC3_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
-extern void TC4_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
-extern void TC5_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
-extern void TC6_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
-extern void TC7_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
-extern void ADC_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
-extern void AC_Handler                 ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
-extern void DAC_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
-extern void I2S_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
+extern void SVCall_Handler             ( void ) __attribute__((weak, alias("Dummy_Handler")));
+extern void PendSV_Handler             ( void ) __attribute__((weak, alias("Dummy_Handler")));
+extern void SysTick_Handler            ( void ) __attribute__((weak, alias("Dummy_Handler")));
+extern void PM_Handler                 ( void ) __attribute__((weak, alias("Dummy_Handler")));
+extern void SYSCTRL_Handler            ( void ) __attribute__((weak, alias("Dummy_Handler")));
+extern void WDT_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler")));
+extern void EIC_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler")));
+extern void NVMCTRL_Handler            ( void ) __attribute__((weak, alias("Dummy_Handler")));
+extern void DMAC_Handler               ( void ) __attribute__((weak, alias("Dummy_Handler")));
+extern void USB_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler")));
+extern void EVSYS_Handler              ( void ) __attribute__((weak, alias("Dummy_Handler")));
+extern void SERCOM0_Handler            ( void ) __attribute__((weak, alias("Dummy_Handler")));
+extern void SERCOM1_Handler            ( void ) __attribute__((weak, alias("Dummy_Handler")));
+extern void SERCOM2_Handler            ( void ) __attribute__((weak, alias("Dummy_Handler")));
+extern void SERCOM4_Handler            ( void ) __attribute__((weak, alias("Dummy_Handler")));
+extern void SERCOM5_Handler            ( void ) __attribute__((weak, alias("Dummy_Handler")));
+extern void TCC0_Handler               ( void ) __attribute__((weak, alias("Dummy_Handler")));
+extern void TCC1_Handler               ( void ) __attribute__((weak, alias("Dummy_Handler")));
+extern void TCC2_Handler               ( void ) __attribute__((weak, alias("Dummy_Handler")));
+extern void TC3_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler")));
+extern void TC4_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler")));
+extern void TC5_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler")));
+extern void TC6_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler")));
+extern void TC7_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler")));
+extern void ADC_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler")));
+extern void AC_Handler                 ( void ) __attribute__((weak, alias("Dummy_Handler")));
+extern void DAC_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler")));
+extern void I2S_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler")));
 
 
-/* MISRAC 2023 deviation block end */
+/* MISRAC 2012 deviation block end */
 
 /* Multiple handlers for vector */
 
 
-
-/* MISRAC 2023 deviation block start */
-/* MISRA C-2023 Rule 2.8 deviated 28 times.  Deviation record ID -  H3_MISRAC_2023_R_2_8_DR_1 */
 
 __attribute__ ((section(".vectors"), used))
 const H3DeviceVectors exception_table=
@@ -159,10 +156,6 @@ const H3DeviceVectors exception_table=
 
 
 };
-
-/* MISRAC 2023 deviation block end */
-
-
 
 /*******************************************************************************
  End of File

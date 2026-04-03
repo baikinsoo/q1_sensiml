@@ -1,6 +1,6 @@
 
 /*******************************************************************************
-  Touch Library v3.20.1 Release
+  Touch Library v3.14.0 Release
 
   Company:
     Microchip Technology Inc.
@@ -17,7 +17,7 @@
 *******************************************************************************/
 
 /*******************************************************************************
-Copyright (C) [2026], Microchip Technology Inc., and its subsidiaries. All rights reserved.
+Copyright (C) [2023], Microchip Technology Inc., and its subsidiaries. All rights reserved.
 
 The software and documentation is provided by microchip and its contributors
 "as is" and any express, implied or statutory warranties, including, but not
